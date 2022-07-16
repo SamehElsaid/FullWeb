@@ -1,0 +1,119 @@
+.windowsScroll{
+    top:0;
+}
+.contact .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--color-bg1);
+    position: relative;
+    gap: 40px;
+    margin: 100px auto;
+    border-radius: 20px;
+
+}
+img {
+    width: 50%;
+}
+.inputText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input, textarea {
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    background: var(--color-bg);
+    outline: none;
+    border: none;
+    color: white;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--color-danger);
+    color: var(--color-white);
+    border: 0;
+    outline: none;
+    border: 1px solid var(--color-bg);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    border: 1px solid var(--color-white);
+    background-color: var(--color-bg);
+}
+.firstCont {
+    position: relative;
+    background: var(--color-bg2);
+    height: 130%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    top: 50%;
+    padding: 0 30px;
+    transform: translateY(-50%);
+    color: white;
+}
+.firstCont h2{
+    margin-top: 10px;
+}
+.firstCont p{
+    margin: 20px 0;
+}
+.firstCont p:nth-of-type(1){
+    color: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    font-size: 13px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstCont i{
+    margin-right: 20px;
+}
+span {
+    display: flex;
+}
+span i{
+    width: 40px;
+    height: 40px;
+    background-color: #2e3267;
+    display: flex !important;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    align-items: center;
+}
+@media (max-width:950px) {
+    .contact .container{
+        grid-template-columns:  1fr;
+
+    }
+    .firstCont {
+        background: var(--color-bg2);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 20px;
+        top: 50%;
+        padding: 30px;
+        color: white;
+    }
+}
+@media (max-width:600px){
+    .inputText{
+        grid-template-columns:  1fr;
+        gap: 0;
+    }
+}
